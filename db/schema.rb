@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20151126215312) do
 
   create_table "pokemons", force: :cascade do |t|
@@ -22,6 +23,11 @@ ActiveRecord::Schema.define(version: 20151126215312) do
   end
 
   create_table "trainers", force: :cascade do |t|
+
+ActiveRecord::Schema.define(version: 20141018092449) do
+
+  create_table "trainers", force: true do |t|
+
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"

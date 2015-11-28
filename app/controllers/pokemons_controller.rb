@@ -1,6 +1,6 @@
 class PokemonsController < ApplicationController
 	def capture
-		@pokemon.trainer = current_trainer
+		id.trainer_id = current_trainer
 		@pokemon.save
 		redirect_to root
 	end
